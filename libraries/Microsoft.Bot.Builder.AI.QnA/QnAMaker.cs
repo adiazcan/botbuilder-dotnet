@@ -300,10 +300,7 @@ namespace Microsoft.Bot.Builder.AI.QnA
                     hydratedOptions.Top = queryOptions.Top;
                 }
 
-                if (queryOptions.StrictFilters?.Length > 0)
-                {
-                   hydratedOptions.StrictFilters = queryOptions.StrictFilters;
-                }
+                hydratedOptions.StrictFilters = queryOptions.StrictFilters;
 
                 if (queryOptions.MetadataBoost?.Length > 0)
                 {
