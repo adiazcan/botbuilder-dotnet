@@ -301,11 +301,7 @@ namespace Microsoft.Bot.Builder.AI.QnA
                 }
 
                 hydratedOptions.StrictFilters = queryOptions.StrictFilters;
-
-                if (queryOptions.MetadataBoost?.Length > 0)
-                {
-                   hydratedOptions.MetadataBoost = queryOptions.MetadataBoost;
-                }
+                hydratedOptions.MetadataBoost = queryOptions.MetadataBoost;
             }
 
             return hydratedOptions;
